@@ -57,7 +57,6 @@ gameOver.visible = false;
 pinkCG = new Group();
 yellowCG = new Group();
 redCG = new Group();
-  
 }
 
 function draw() {
@@ -124,8 +123,9 @@ function draw() {
     //Add code to show restart game instrution in text here
     if(keyDown("space")) {
       reset();
-      text("Press space to reset ",1000,30,10,20);
-     }
+    }
+    text("Press space to reset ",650,180,10,20);
+     
        
     path.velocityX = 0;
     mainCyclist.velocityY = 0;
@@ -177,6 +177,8 @@ function reset(){
   gameOver.visible=false;
   mainCyclist.addAnimation("SahilRunning");
   pinkCG.destroyEach();
+  yellowCG.destroyEach();
+  redCG.destroyEach();
   distance=0;
 }
 
