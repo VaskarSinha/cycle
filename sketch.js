@@ -124,7 +124,7 @@ function draw() {
     if(keyDown("space")) {
       reset();
     }
-    text("Press space to reset ",650,180,10,20);
+    text("Press space to reset ",600,200);
      
        
     path.velocityX = 0;
@@ -175,7 +175,7 @@ function redCyclists(){
 function reset(){
   gameState= PLAY;
   gameOver.visible=false;
-  mainCyclist.addAnimation("SahilRunning");
+  mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
   pinkCG.destroyEach();
   yellowCG.destroyEach();
   redCG.destroyEach();
